@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/home_bg"
+              android:orientation="vertical"
+              tools:context=".MainActivity" >
+    <include layout="@layout/header"/>
+
+    <RelativeLayout
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <ImageView
+                android:id="@+id/img_arrow"
+                android:src="@drawable/double_white_arrow"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_height="30dp"
+                android:layout_width="30dp" />
+        <TextView
+                android:layout_toRightOf="@id/img_arrow"
+                android:text="汽车频道"
+                android:layout_marginLeft="5dp"
+                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#F3F3F3"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/img_back"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_back_white"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp"
+                android:layout_width="90dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_height="0dp">
+        <LinearLayout
+                android:id="@+id/ll_left"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_width="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            <TextView
+                    android:text="基础架构说明"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+            <View
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            <TextView
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:text="@string/air_function"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:ellipsize="end"/>
+
+            <ImageView
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#245628"
+                    android:orientation="vertical"
+                    android:layout_height="0"
+                    android:layout_weight="1">
+                <TextView
+                        android:text="乘务与地勤"
+                        android:textColor="#F3F3F3"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"/>
+                <View
+                        android:background="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                <TextView
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#F3F3F3"
+                        android:text="@string/air_work"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:background="#245628"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                <TextView
+                        android:text="交互式数据采集"
+                        android:textColor="#F3F3F3"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"/>
+                <View
+                        android:background="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                <TextView
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/air_data"
+                        android:layout_margin="5dp"
+                        android:textColor="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/home_bg"
+              android:orientation="vertical"
+        >
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            >
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/child_bg"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                    android:id="@+id/img_airapd"
+                    android:src="@drawable/airpad_second"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_toRightOf="@id/img_airapd"
+                    android:src="@drawable/double_grey_arrow"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp" />
+            <TextView
+                    android:id="@+id/tv_first_title"
+                    android:layout_toRightOf="@id/img_arrow"
+                    android:text="文艺与光影"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textStyle="bold"/>
+
+            <ImageView
+                    android:id="@+id/img_arrow_single"
+                    android:src="@drawable/single_grey_arrow"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_first_title"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp" />
+
+            <TextView
+                    android:id="@+id/tv_second_title"
+                    android:layout_toRightOf="@id/img_arrow_single"
+                    android:text="F/64 GROUP与他们的黑白世界"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textStyle="bold"/>
+
+            <ImageView
+                    android:id="@+id/img_back"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_back_black"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="30dp"
+                    android:layout_width="90dp"/>
+        </RelativeLayout>
+
+
+</FrameLayout>
+</LinearLayout>
