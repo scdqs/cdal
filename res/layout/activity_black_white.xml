@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/child_bg"
+              android:orientation="vertical"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#DD000000"
+            android:orientation="vertical"
+            >
+
+        <RelativeLayout
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                    android:id="@+id/img_airapd"
+                    android:src="@drawable/airpad_second"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_toRightOf="@id/img_airapd"
+                    android:src="@drawable/double_grey_arrow"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp" />
+            <TextView
+                    android:id="@+id/tv_first_title"
+                    android:layout_toRightOf="@id/img_arrow"
+                    android:text="文艺与光影"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+
+            <ImageView
+                    android:id="@+id/img_arrow_single"
+                    android:src="@drawable/single_grey_arrow"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_first_title"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp" />
+
+            <TextView
+                    android:id="@+id/tv_second_title"
+                    android:layout_toRightOf="@id/img_arrow_single"
+                    android:text="F/64 GROUP与他们的黑白世界"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+
+            <ImageView
+                    android:id="@+id/img_back"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/btn_back_white"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="30dp"
+                    android:layout_width="90dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_height="0dp">
+            <LinearLayout
+                    android:id="@+id/ll_up"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                <ImageView
+                        android:src="@drawable/kola"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="0dp"
+                        android:scaleType="fitCenter"/>
+
+                <TextView
+                            android:text="@string/air_diff"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:layout_margin="5dp"
+                            android:textColor="#F3F3F3"
+                            android:layout_width="0dp"
+                            android:ellipsize="end"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_down"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                <ImageView
+                        android:src="@drawable/kola"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
