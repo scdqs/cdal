@@ -23,6 +23,7 @@
         android:orientation="horizontal" >
 
         <RelativeLayout
+            android:id="@+id/air_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
