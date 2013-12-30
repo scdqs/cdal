@@ -67,6 +67,11 @@
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="com.chengdu.air.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>

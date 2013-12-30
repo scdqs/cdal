@@ -7,7 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class ArtActivity extends Activity {
 
@@ -16,13 +17,22 @@ public class ArtActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_black_white_detail);
-		Button back = (Button)findViewById(R.id.img_back);
-		back.setOnClickListener(new OnClickListener() {
+		ImageView back = (ImageView)findViewById(R.id.img_back);
+		LinearLayout airLayout = (LinearLayout)findViewById(R.id.ll_left);
+		airLayout.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(ArtActivity.this, Art2Activity.class));
 				
+			}
+		});
+		back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+//				startActivity(new Intent(ArtActivity.this, Art2Activity.class));
+				finish();
 			}
 		});
 	}

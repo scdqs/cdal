@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 		RelativeLayout airLayout = (RelativeLayout)findViewById(R.id.air_layout);
+		RelativeLayout goMenuLayout = (RelativeLayout)findViewById(R.id.go_menu);
 		airLayout.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -24,7 +25,16 @@ public class MainActivity extends Activity {
 				Intent intent = new Intent(MainActivity.this,
 						AirHomeActivity.class);
 				startActivity(intent);
-				finish();
+				
+			}
+		});
+		goMenuLayout.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this,
+						MenuActivity.class);
+				startActivity(intent);
 				
 			}
 		});
